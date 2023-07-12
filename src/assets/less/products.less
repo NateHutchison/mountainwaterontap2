@@ -1,0 +1,541 @@
+/* PAGE-SPECIFIC STYLES FOR THE ABOUT PAGE */
+/*-- -------------------------- -->
+<---          Banner            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+   
+    #banner-849 {
+        
+        /* 175px - 260px top */
+        padding: clamp(10.9375rem, 20vw, 16.25rem) (16/16rem) clamp(6.25rem, 14vw, 12vw);
+        /* clips svg wave from causing overflow issues */
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        
+        .cs-container {
+            text-align: center;
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: (16/16rem);
+        }
+    
+        .cs-int-title {
+            /* 39px - 61px */
+            font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: inherit;
+            margin: 0;
+            color: var(--bodyTextColorWhite);
+            position: relative;
+        }
+
+        .cs-background {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            &:before {
+                /* background color overlay */
+                content: '';
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: #1a1a1a;
+                opacity: .64;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                /* Makes img tag act as a background image */
+                object-fit: cover;
+            }
+        }
+
+        .cs-wave {
+            /* we're stretching the svg wider than the viewport so it's taller and has more of a presence */
+            width: (768/16rem);
+            height: auto;
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48em) {
+    #banner-849 {
+        .cs-background {
+            &:before {
+                opacity: 1;
+                background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.9) 16.86%, rgba(0, 0, 0, 0) 100%);
+            }
+        }
+
+        .cs-wave {
+            width: 100%;
+            left: 0;
+            transform: none;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+    body.dark-mode {
+        #banner-849 {
+            .cs-wave {
+                path {
+                    fill: var(--dark);
+                }
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---        Content Page        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #content-page-849 {
+        /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
+        font-family: 'Roboto', 'Arial', sans-serif;
+        padding: var(--sectionPadding);
+        background-color: #fff;
+        /* clips the wave background from causing overflow issues when it goes off screen */
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+            position: relative;
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            max-width: (630/16rem);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+    
+        .cs-title {
+            font-size: var(--headerFontSize);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: inherit;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 (16/16rem) 0;
+            color: var(--headerColor);
+            position: relative;
+        }
+
+        h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            text-align: inherit;
+            margin: 0 0 (16/16rem) 0;
+            color: var(--headerColor);
+        }
+
+        h2 {
+            font-size: (32/16rem);
+            margin-top: (32/16rem);
+        }
+
+        h3 {
+            font-size: (24/16rem);
+            color: var(--primary);
+        }
+
+        h4, h5, h6 {
+            font-size: (20/16rem);
+        }
+
+        .cs-button-solid {
+            margin-bottom: (32/16rem);
+        }
+
+        .cs-no-margin {
+            margin: 0;
+        }
+
+        .cs-color {
+            color: var(--primary);
+        }
+    
+        p {
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            text-align: inherit;
+            width: 100%;
+            margin: 0 0 (16/16rem) 0;
+            color: var(--bodyTextColor);
+            &:last-of-type {
+                margin-bottom: (32/16rem);
+            }
+
+            a {
+                font-size: inherit;
+                line-height: inherit;
+                text-decoration: underline;
+                color: var(--primary);
+            }
+        }
+
+        ol, ul {
+            padding-left: (24/16rem);
+            margin: 0 0 (32/16rem) 0;
+            color: var(--bodyTextColor);
+            display: flex;
+            flex-direction: column;
+            gap: (16/16rem);
+        }
+
+        ul {
+            li {
+                list-style: none;
+                color: inherit;
+                position: relative;
+
+                &:before {
+                    /* custom list bullet */
+                    content: '';
+                    width: 3px;
+                    height: 3px;
+                    background: currentColor;
+                    opacity: 1;
+                    border-radius: 50%;
+                    position: absolute;
+                    display: block;
+                    top: (10/16rem);
+                    left: (-12/16rem);
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .cs-image-group {
+            width: 50%;
+            max-width: (542/16rem);
+            display: none;
+            position: relative;
+            flex-direction: column;
+            gap: (20/16rem);
+        }
+
+        .cs-picture {
+            width: 100%;
+            /* 300px - 520px */
+            height: clamp(18.75rem, 40vw, 32.5rem);
+            box-shadow: 0px 3.3478px 50.2169px rgba(0, 0, 0, 0.16);
+            /* 125px - 200px */
+            border-radius: clamp(7.8125rem, 15vw, 12.5rem) 0 clamp(7.8125rem, 15vw, 12.5rem) 0;
+            /* prevents border from affecting height and width */
+            box-sizing: border-box;
+            /* clips img tag corners */
+            overflow: hidden;
+            display: block;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                /* makes it act like a background image */
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #content-page-849 {
+        .cs-container {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .cs-content {
+            flex: none;
+            width: 60%;
+        }
+
+        .cs-image-group {
+            display: flex;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #content-page-849 {
+            background-color: var(--dark);
+            
+            .cs-title, .cs-text, h2, h3, h4, h5, h6, li, p {
+                color: var(--bodyTextColorWhite);
+            }
+            .cs-color, a {
+                color: var(--primaryLight);
+            }
+
+            p, li {
+                color: #ebebeb;
+            }
+
+            .cs-picture {
+                border-color: var(--dark);
+                background-color: var(--dark);
+            }
+        }
+    }
+}
+                                
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+	#sbs {
+		padding: var(--sectionPadding);
+
+		.cs-container {
+			width: 100%;
+			max-width: (1280/16rem);
+			margin: auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			row-gap: (40/16rem);
+		}
+
+		.cs-left {
+			/* scaling the font size with the view width */
+			font-size: ~'min(2.31vw, .7em)';
+			/* using ems so we can use font size to scale the whole section */
+			width: (631/16em);
+			height: (636/16em);
+			position: relative;
+		}
+
+		.cs-picture {
+			border-radius: (24/16em);
+			/* clips img tag corners */
+			overflow: hidden;
+			position: absolute;
+			display: block;
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				/* makes image act like a background image */
+				object-fit: cover;
+			}
+		}
+
+		.cs-picture1 {
+			width: (522/16em);
+			height: (581/16em);
+			left: 0;
+			top: 0;
+		}
+
+		.cs-picture2 {
+			width: (414/16em);
+			height: (400/16em);
+			background-color: #fff;
+			box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
+			/* 6px - 12px */
+			border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
+			right: 0;
+			bottom: 0;
+		}
+
+		.cs-right {
+			margin: auto;
+			max-width: (542/16rem);
+		}
+
+		.cs-topper {
+			text-align: left;
+			margin-bottom: (4/16rem);
+		}
+
+		.cs-title {
+			text-align: left;
+			max-width: (800/16rem);
+		}
+
+		.cs-text {
+			text-align: left;
+			max-width: (750/16rem);
+			margin-bottom: (16/16rem);
+			color: var(--bodyTextColor);
+
+			&:last-of-type {
+				margin-bottom: (32/16rem);
+			}
+		}
+
+		.cs-flex-group {
+			/* 16px - 32px */
+			padding: clamp(1rem, 3vw, 2rem);
+			background-color: #f7f7f7;
+			border-radius: (16/16rem);
+			position: relative;
+		}
+
+		.cs-flex-p {
+			/* 14px - 16px */
+			font-size: clamp(0.875rem, 1.5vw, 1rem);
+			line-height: 1.5em;
+			margin: 0 0 (16/16rem);
+			color: #353535;
+		}
+
+		.cs-name {
+			font-size: (16/16rem);
+			line-height: 1.2em;
+			text-transform: uppercase;
+			font-weight: bold;
+			margin: 0 0 (4/16rem);
+			color: var(--headerColor);
+			display: block;
+		}
+
+		.cs-job {
+			font-size: (14/16rem);
+			line-height: 1.5em;
+			color: #353535;
+			display: block;
+		}
+
+		.cs-quote-icon {
+			/* 60px - 136px */
+			width: clamp(3.75rem, 10vw, 8.5rem);
+			height: auto;
+			position: absolute;
+			bottom: (0/16rem);
+			/* 16px - 32px */
+			right: clamp(1rem, 4vw, 2rem);
+		}
+
+		.cs-button-solid {
+			margin-top: (32/16rem);
+		}
+	}
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64em) {
+	#sbs {
+		.cs-container {
+			flex-flow: row;
+			justify-content: space-between;
+			gap: (52/16rem);
+		}
+
+		.cs-left {
+			font-size: ~'min(1.2vw, 1em)';
+			flex: none;
+		}
+
+		.cs-right {
+			margin: 0;
+		}
+	}
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+	body.dark-mode {
+		#sbs {
+			.cs-left {
+				&:before,
+				&:after {
+					background: var(--accent);
+				}
+			}
+
+			.cs-picture2 {
+				background-color: var(--dark);
+				/* 6px - 12px */
+				border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
+			}
+
+			.cs-topper {
+				color: var(--primaryLight);
+			}
+
+			.cs-title,
+			.cs-text,
+			.cs-h3,
+			.cs-flex-p,
+			.cs-name {
+				color: var(--bodyTextColorWhite);
+			}
+
+			.cs-flex-group {
+				background-color: var(--accent);
+			}
+
+			.cs-job {
+				color: var(--bodyTextColorWhite);
+				opacity: 0.8;
+			}
+
+			.cs-quote-icon {
+				opacity: 0.2;
+			}
+		}
+	}
+}
