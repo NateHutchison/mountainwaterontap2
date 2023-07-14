@@ -2,22 +2,22 @@
 title: 'Page title for <title> and OG tags'
 description: 'Description for <meta> and OG tags'
 preloadImg: '/assets/images/imagename.format'
-permalink: '/product2'
+permalink: '/page-path'
 eleventyNavigation:
-    key: Product2
-    parent: Products
+    key: Name to appear in navigation
+    parent: Delete, or put another page's key here to create a dropdown
     order: 1000
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-<link rel="stylesheet" href="/css/products.css">
+    <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
 {% endblock %}
 
 {% block body %}
     <!-- Page HTML goes here, without a <main> wrapper -->
-
+        
 <!-- ============================================ -->
 <!--                   Banner                     -->
 <!-- ============================================ -->
@@ -102,5 +102,3 @@ eleventyNavigation:
 </section>
 {% endblock %}
 
-
-                                
