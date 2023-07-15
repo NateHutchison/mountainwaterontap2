@@ -13,8 +13,240 @@ eleventyNavigation:
 
 {% block head %}
 <link rel="stylesheet" href="/css/products.css">
-{% endblock %}
+    {% endblock %}
 
-{% block body %}
-    <!-- Page HTML goes here, without a <main> wrapper -->
+    {% block body %}
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-849">
+        <div class="cs-container">
+            <span class="cs-int-title">Biodynamizer</span>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background" aria-hidden="true">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/productwaterfall.webp">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/productwaterfall.webp">
+            <img loading="lazy" decoding="async" src="/assets/images/productwaterfall.webp" alt="waterfall">
+        </picture>
+        <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
+        <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z"
+                fill="white" />
+        </svg>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                 Content Page                 -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ 
+    This Stitch is used for content heavy interior pages
+    that have no design or layout.  Often times these are 
+    content silos where you talk extensively about a topic
+    to educate your visitors and rank on Google for the 
+    content.  These are great for pages that have a TON
+    of content.  Design isn't important here, it's all 
+    about making the content accessible and easy to read.
+================================================= -->
+
+    <section id="content-page-849">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h1 class="cs-title">h2opure Premium <span class="cs-color">Whole Home Filtration</span></h1>
+                <!-- <h2>Heading 2</h2>
+             <h3>Heading 3</h3>
+             <h4>Heading 4-6</h4> -->
+
+
+
+                <!--      <h3>Specs</h3>
+             <ul>
+                <li>13”x54” Tank</li>
+             </ul>
+                <h3>Conditioning</h3> -->
+
+                <div class="tab-menu">
+                    <button onclick="openTab('tab1')" class="active">
+                        <h5>About</h5>
+                    </button>
+                    <button onclick="openTab('tab2')">
+                        <h5>Specs</h5>
+                    </button>
+                    <button onclick="openTab('tab3')">
+                        <h5>Conditioning</h5>
+                    </button>
+                    <button onclick="openTab('tab4')">
+                        <h5>Our Technology</h5>
+                    </button>
+                </div>
+
+                <div id="tab1" class="tab-content active">
+                    <p class="cs-item-p">
+                        Experience the best of whole house water filtration with the h2opure signature system custom
+                        designed to comprehensively
+                        filter contaminants including chlorine, fluoride, and heavy metals. h2opure integrates our
+                        proprietary Vortech
+                        technology and a magnetic hard water conditioner to naturally suspend minerals to prevent scale.
+                        Enjoy simply pure water
+                        from every faucet in your home!
+                    </p>
+                    <!-- <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laboriosam eum quae in temporibus cumque tempora expedita mollitia nostrum <strong>adipisci, ipsum commodi</strong>, cupiditate, sequi quos enim! 
+                        </p>
+                        <h3>Heading 3</h3>
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ol> -->
+                    <!-- <h4>Heading 4-6</h4> -->
+                    <ul>
+                        <li>Healthy, great-tasting, odor-free water for your entire home.</li>
+                        <li>Hassle-free system does not require any regular maintenance, only filter change ~every 6mo
+                        </li>
+                        <li>Protecting you from contaminants that are absorbed into the skin while showering and bathing
+                        </li>
+                        <li>Proudly producing the best ultrapure hydroxyapatite, along with acid-washed catalytic
+                            coconut shell granular activated carbon (GAC) and filtering down to an impressive 3 micron.
+                        </li>
+                        <li>High purity KDF55 copper-zinc formula removes heavy metals like lead and mercury and extends
+                            the life of our ultrapure granular activated carbon (GAC) by preventing bacteria</li>
+                        <li>Zeolite removed additional toxins, heavy metals, and turbidity</li>
+                        <li>Inline conditioning chamber physically conditions water hardness minerals of up to 30 grains
+                            of water hardness.</li>
+                        <li>Systems meet and exceed all NSF, ANSI, and California State standards and compliances</li>
+                        <li>Simple installation, similar to a water heater or tankless water heater.</li>
+                        <li>Beautifully chrome wrapped protective tank cover.</li>
+                        <li>10-year or 1,500,000 gallon filtration media lifespan.</li>
+                        <li>Lifetime warranty on the tank and valve head.</li>
+                    </ul>
+                    <a href="/contact" class="cs-button-solid" aria-label="learn more about us">Purchase Now!</a>
+                </div>
+                
+                    <div id="tab2" class="tab-content">
+                        <ul>
+                            <h4>
+                                <li>13”x54” Tank</li>
+                            </h4>
+                        </ul>
+                        <!-- <p>This is the content for Tab 1.</p> -->
+                    </div>
+
+                    <div id="tab3" class="tab-content">
+                        <h2>Tab 2 Content</h2>
+                        <p class="cs-item-p">This is the content for Tab 2.</p>
+                    </div>
+
+                    <div id="tab4" class="tab-content">
+                        <h3>Our Technology</h3>
+                        <p class="cs-item-p">
+                            SimplyWater's Premium Whole House Water Filtration System outperforms all other filtration
+                            systems with a proprietary
+                            blend of NSF® certified high-grade water filtration media customized for Middle TN, along
+                            with the most sophisticated
+                            technology options for your home.
+                        </p>
+                        <ul>
+                            <li>SimplyWater’s™ h2opure premium system is comprised of h2opure, GlacierGuard™, and inline
+                                conditioning chamber, which
+                                combine to effectively filter out fluoride, heavy metals, bacteria, as well as chlorine,
+                                chloramine/chloramines,
+                                sediment and particulate, cysts, copepods, VOCs, SOCs, THMs, PAHs, PFCs, PFOAs, C8,
+                                GenX, PFNAs, PFOS, PFAS, PFEAs,
+                                PFCAs, PFSAs, PFBS, HAA, HAA5, TCE, PCB, MTBE, pharmaceutical drug residues, glyphosate,
+                                atrazine, benzene, xylene,
+                                pesticides, insecticides, herbicides, tastes, odors and hundreds of other potential
+                                contaminants and harmful chemicals
+                                from the water entering your home while maintaining healthy minerals in the process.
+                            </li>
+                            <li>
+                                Our unique, clear pre-filter cartridges make it easy to visualize the buildup before it
+                                affects pressure in your home
+                                when they need changed. The woven, high-grade material removes the smallest of
+                                particulates to prevent any unexpected
+                                debris from the city pipes.
+                            </li>
+                            <li>
+                                The GlacierGuard™ is a hydroxyapatite media and does not contain any "activated
+                                alumina".
+                            </li>
+                            <li>
+                                All of SimplyWater’s tanks utilize a proprietary Vortech distribution technology, the
+                                world’s most innovative and
+                                efficient universal distribution plate for water treatment systems, in filtration and
+                                softening applications. The design
+                                creates fluidity of the media bed and extends contaminant removal capacity; which means
+                                less regenerations and
+                                significant reduction of water use, along with a more consistent and even contact time
+                                for your home’s water. Saves
+                                Water. Saves Salt. Saves the Environment.
+                            </li>
+                            <li>
+                                Add DROP leak detection to your system for the most sophisticated of homes! We are the
+                                only dealer in Middle-TN who
+                                integrates our systems with DROP Smart Phone technology. Protect your most expensive
+                                asset, your home, with DROP leak
+                                detection and prevention. If interested in this upgrade, call us to see if the
+                                customization is possible.
+                            </li>
+                        </ul>
+                    
+                    </div>
+                        <script>
+                            function openTab(tabName) {
+                                var i, tabContent;
+                                tabContent = document.getElementsByClassName('tab-content');
+                                for (i = 0; i < tabContent.length; i++) {
+                                    tabContent[i].style.display = 'none';
+                                }
+                                document.getElementById(tabName).style.display = 'block';
+                    
+                                var tabButtons = document.getElementsByTagName('button');
+                                for (i = 0; i < tabButtons.length; i++) {
+                                    tabButtons[i].classList.remove('active');
+                                }
+                                event.currentTarget.classList.add('active');
+                            }
+                        </script>
+
+              
+
+
+            </div>
+            <div class="cs-image-group">
+                <!--Top Picture-->
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fcontent1.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fcontent1.jpg">
+                    <img decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fcontent1.jpg" alt="person"
+                        width="542" height="520" aria-hidden="true">
+                </picture>
+                <!--Top Picture-->
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fcontent2.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fcontent2.jpg">
+                    <img decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fcontent2.jpg" alt="person"
+                        width="542" height="520" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+
 {% endblock %}
