@@ -17,7 +17,32 @@ eleventyNavigation:
     {% endblock %}
 
     {% block body %}
-    
+
+    <!-- Include latest stable release of jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<!-- Include the PayFrame JavaScript -->
+<script type="text/javascript" src="https://api.payrix.com/payFrameScript"></script>
+
+<script>
+    PayFrame.config.apiKey = "b57d7185174957f97b1a4b66350d845b";
+    PayFrame.config.merchant = "p1_mer_5a285faf1b79148f3500b9e";
+    PayFrame.config.amount = 500;
+
+                    
+    PayFrame.config.button = {
+                    parent: "parent-pay",
+                    value: "Purchase Now!",
+                    class: "my-pay"
+                  };
+
+    PayFrame.config.color = "8fd8ff";
+    PayFrame.config.name = "Demo Name";
+    /* PayFrame.config.image = "https://d33wubrfki0l68.cloudfront.net/149f5adbed598149606035ef846a70218ea398e6/32fb5/assets/images/logo-blue.svg"; */
+    PayFrame.config.description = "This is a Demo";
+                  
+  </script>
+
     <!-- ============================================ -->
     <!--                   Banner                     -->
     <!-- ============================================ -->
@@ -75,16 +100,16 @@ eleventyNavigation:
 
                 <div class="tab-menu">
                     <button onclick="openTab('tab1')" class="active">
-                        <h5>About</h5>
+                        <h4>About</h4>
                     </button>
                     <button onclick="openTab('tab2')">
-                        <h5>Specs</h5>
+                        <h4>Specs</h4>
                     </button>
                     <button onclick="openTab('tab3')">
-                        <h5>Conditioning</h5>
+                        <h4>Conditioning</h4>
                     </button>
                     <button onclick="openTab('tab4')">
-                        <h5>Our Technology</h5>
+                        <h4>Our Technology</h4>
                     </button>
                 </div>
 
@@ -128,9 +153,12 @@ eleventyNavigation:
                         <li>10-year or 1,500,000 gallon filtration media lifespan.</li>
                         <li>Lifetime warranty on the tank and valve head.</li>
                     </ul>
-                    <a href="/contact" class="cs-button-solid" aria-label="learn more about us">Purchase Now!</a>
+                    <div id="parent-pay" aria-label="purchase product button"></div>
+                   <!--  <a class="cs-button-solid" aria-label="learn more about us">Purchase Now!</a> -->
+                
                 </div>
                 
+
                     <div id="tab2" class="tab-content">
                         <ul>
                             <h4>
@@ -217,7 +245,6 @@ eleventyNavigation:
                             }
                         </script>
 
-              
 
 
             </div>
@@ -251,7 +278,33 @@ eleventyNavigation:
     </section>
 
 
+    <div class="image-gallery">
+    <div class="gallery">
+        <img src="/assets/images/mountainglass.webp" alt="Image 1" onclick="openLightbox(this)">
+        <img src="/assets/images/mountainglass.webp" alt="Image 2" onclick="openLightbox(this)">
+        <img src="/assets/images/mountainglass.webp" alt="Image 3" onclick="openLightbox(this)">
+      </div>
+      
+      
+      
+      <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img src="" alt="Large Image" class="lightbox-image">
+      </div>
+    </div>
 
+<script>
+document.addEventListener('click', function(event) {
+  if (event.target.classList.contains('lightbox')) {
+    closeLightbox();
+  }
+});
+
+function closeLightbox() {
+  var lightbox = document.querySelector('.lightbox');
+  lightbox.style.display = 'none';
+}
+</script>
 
 
     {% endblock %}

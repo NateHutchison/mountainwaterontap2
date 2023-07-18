@@ -82,3 +82,17 @@ const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropd
 		
 		new CS_MenuFilter()
 										
+
+		function openLightbox(image) {
+			var lightbox = document.querySelector('.lightbox');
+			var lightboxImage = document.querySelector('.lightbox-image');
+			
+			lightbox.style.display = 'flex';
+			lightboxImage.src = image.src;
+		  }
+		  
+		  function closeLightbox() {
+			var lightbox = document.querySelector('.lightbox');
+			
+			lightbox.style.display = 'none';
+		  }
