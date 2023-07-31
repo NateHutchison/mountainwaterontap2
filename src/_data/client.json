@@ -1,14 +1,14 @@
 {
 	"name": "Mountain Water On Tap",
 	"email": "info@mountainwaterontap.com",
-	"phoneForTel": "555-779-4407",
-	"phoneFormatted": "(555) 779-4407",
+	"phoneForTel": "",
+	"phoneFormatted": "",
 	"address": {
-		"lineOne": "First Address Line",
-		"lineTwo": "Second Address Line",
-		"city": "Franklin",
+		"lineOne": "",
+		"lineTwo": "",
+		"city": "",
 		"state": "TN",
-		"zip": "80206",
+		"zip": "",
 		"mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
 	},
 	"domain": "www.mountainwaterontap.com"
