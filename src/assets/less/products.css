@@ -312,22 +312,12 @@
     margin-bottom: 20px;
   }
   body.dark-mode button {
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
+    background-color: #ac8856;
+    padding: 5px 10px;
+    color: #fff;
     display: inline-block;
-    width: auto;
-    line-height: 3.125em;
-    height: 3.125rem;
-    text-align: center;
-    padding: 0 1.875rem;
-    position: relative;
-    z-index: 1;
-    background-color: var(--primary);
-    color: #ebebeb;
-    transition: color 0.3s;
-    transition-delay: 0.1s;
+    margin-bottom: 15px;
+    text-decoration: none;
   }
   body.dark-mode button:hover {
     background-color: #a18429;
@@ -341,13 +331,6 @@
   body.dark-mode .tab-content.active {
     display: block;
   }
-}
-/* Tab menu styles */
-.tab-menu {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
 }
 button {
   /*  background-color: #f2f2f2;
@@ -363,36 +346,18 @@ button {
     flex-direction: column;
      
      padding-top: 0.55rem; */
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
+  background-color: #ac8856;
+  padding: 5px 10px;
+  color: #fff;
   display: inline-block;
-  width: auto;
-  line-height: 3.125em;
-  height: 3.125rem;
-  text-align: center;
-  padding: 0 1.875rem;
-  position: relative;
-  z-index: 1;
-  background-color: var(--primary);
-  color: #000;
-  transition: color 0.3s;
-  transition-delay: 0.1s;
+  margin-bottom: -2px;
+  margin-top: -1.67px;
+  text-decoration: none;
+  border: none;
+  font-size: large;
 }
 button:hover {
-  background-color: #ddd;
-}
-/* Active tab style */
-button.active {
-  background-color: #d7d6d6;
-}
-.tab-content {
-  display: none;
-}
-/* Show the active tab content */
-.tab-content.active {
-  display: block;
+  background-color: #ac8856;
 }
 /*-- -------------------------- -->
 <---       Side By Side         -->

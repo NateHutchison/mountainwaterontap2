@@ -86,6 +86,19 @@ eleventyNavigation:
         <div class="cs-container">
             <div class="cs-content">
                 <h1 class="cs-title">h2opure Premium <span class="cs-color">Whole Home Filtration</span></h1>
+
+                <div class="large-12 col" style="text-align: center; padding: 20px 0;">
+                    <a href="#description" class="button-tab">Description</a>
+                    <a href="#specifications" class="button-tab">Specifications</a>
+                    <a href="#installation" class="button-tab">Installation</a>
+                    <a href="#financing" class="button-tab">Financing</a>
+                    <a href="#shipping" class="button-tab">Shipping</a>
+                    <a href="#warranty-return" class="button-tab">Warranty &amp; Return</a>
+                    <div id="parent-pay" class="button-tab"></div>
+                    
+                </div>
+
+
                 <!-- <h2>Heading 2</h2>
              <h3>Heading 3</h3>
              <h4>Heading 4-6</h4> -->
@@ -98,22 +111,8 @@ eleventyNavigation:
              </ul>
                 <h3>Conditioning</h3> -->
 
-                <div class="tab-menu">
-                    <button onclick="openTab('tab1')" class="active">
-                        <h4>About</h4>
-                    </button>
-                    <button onclick="openTab('tab2')">
-                        <h4>Specs</h4>
-                    </button>
-                    <button onclick="openTab('tab3')">
-                        <h4>Conditioning</h4>
-                    </button>
-                    <button onclick="openTab('tab4')">
-                        <h4>Our Technology</h4>
-                    </button>
-                </div>
-
-                <div id="tab1" class="tab-content active">
+                
+                <div>
                     <p class="cs-item-p">
                         Experience the best of whole house water filtration with the h2opure signature system custom
                         designed to comprehensively
@@ -150,30 +149,33 @@ eleventyNavigation:
                         <li>Systems meet and exceed all NSF, ANSI, and California State standards and compliances</li>
                         <li>Simple installation, similar to a water heater or tankless water heater.</li>
                         <li>Beautifully chrome wrapped protective tank cover.</li>
+                        <div id="specifications"></div>
                         <li>10-year or 1,500,000 gallon filtration media lifespan.</li>
                         <li>Lifetime warranty on the tank and valve head.</li>
                     </ul>
-                    <div id="parent-pay" aria-label="purchase product button"></div>
+                    
+                    <!-- <div id="parent-pay" aria-label="purchase product button"></div> -->
                    <!--  <a class="cs-button-solid" aria-label="learn more about us">Purchase Now!</a> -->
                 
                 </div>
                 
 
-                    <div id="tab2" class="tab-content">
-                        <ul>
+                    <div>
+                       
+                            <h3>Specifications</h3>
                             <h4>
                                 <li>13”x54” Tank</li>
                             </h4>
-                        </ul>
-                        <!-- <p>This is the content for Tab 1.</p> -->
+                       
+                     
                     </div>
 
-                    <div id="tab3" class="tab-content">
+                    <div>
                         <h2>Tab 2 Content</h2>
                         <p class="cs-item-p">This is the content for Tab 2.</p>
                     </div>
 
-                    <div id="tab4" class="tab-content">
+                    <div>
                         <h3>Our Technology</h3>
                         <p class="cs-item-p">
                             SimplyWater's Premium Whole House Water Filtration System outperforms all other filtration
@@ -228,22 +230,7 @@ eleventyNavigation:
                         </ul>
                     
                     </div>
-                        <script>
-                            function openTab(tabName) {
-                                var i, tabContent;
-                                tabContent = document.getElementsByClassName('tab-content');
-                                for (i = 0; i < tabContent.length; i++) {
-                                    tabContent[i].style.display = 'none';
-                                }
-                                document.getElementById(tabName).style.display = 'block';
-                    
-                                var tabButtons = document.getElementsByTagName('button');
-                                for (i = 0; i < tabButtons.length; i++) {
-                                    tabButtons[i].classList.remove('active');
-                                }
-                                event.currentTarget.classList.add('active');
-                            }
-                        </script>
+                        
 
 
 

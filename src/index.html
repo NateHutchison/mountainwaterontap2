@@ -1,5 +1,5 @@
 ---
-title: 'Mountain Water on Tap'
+title: 'Premium Water on Tap'
 description: 'Discover the refreshing essence of pure mountain water on tap. Experience premium filtration and revitalization for a revitalized you. Explore Mountain Water On Tap today.'
 preloadImg: '/assets/images/landing.jpg'
 metaImage: 'https://d33wubrfki0l68.cloudfront.net/a634df2275fa6a05e69cdb8ef8326e0f8540fcbe/f0a1b/assets/images/mountainwater.webp'
@@ -32,9 +32,36 @@ eleventyNavigation:
                 });
         }
     </script>
+
+    <!-- Include latest stable release of jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <!-- Include the PayFrame JavaScript -->
+    <script type="text/javascript" src="https://api.payrix.com/payFrameScript"></script>
+    
+    <script>
+        PayFrame.config.apiKey = "b57d7185174957f97b1a4b66350d845b";
+        PayFrame.config.merchant = "p1_mer_5a285faf1b79148f3500b9e";
+        PayFrame.config.amount = 500;
+    
+                        
+        PayFrame.config.button = {
+                        parent: "parent-pay",
+                        value: "Purchase Now!",
+                        class: "my-pay"
+                      };
+    
+        PayFrame.config.color = "ac8856";
+        PayFrame.config.name = "Demo Name";
+        /* PayFrame.config.image = "https://d33wubrfki0l68.cloudfront.net/149f5adbed598149606035ef846a70218ea398e6/32fb5/assets/images/logo-blue.svg"; */
+        PayFrame.config.description = "This is a Demo";
+                      
+      </script>
+
 {% endblock %}
 
 {% block body %}
+
 
    <!-- ============================================ -->
 <!--                   Hero                       -->
@@ -47,7 +74,7 @@ eleventyNavigation:
             <p class="cs-text">
                 Experience the pure power of premium water filtration with our restructured H2O systems for a healthier and revitalized you.
             </p>
-            <a href="" class="cs-button-solid">Purchase Today!</a>
+            <div id="parent-pay" class="button-tab"></div>
            <!--  <a href="" class="cs-button-transparent">Our Services</a> -->
             <span class="cs-header">Trusted by:</span>
             <div class="cs-logo-group">
@@ -65,7 +92,7 @@ eleventyNavigation:
             <picture class="cs-background">
                 <source media="(max-width: 600px)" srcset="/assets/images/mountainglass.webp">
                 <source media="(min-width: 601px)" srcset="/assets/images/mountainglass.webp">
-                <img loading="lazy" decoding="async" src="/assets/images/mountainglass.webp" alt="leaves" width="842" height="737" aria-hidden="true">
+                <img loading="lazy" decoding="async" src="/assets/images/mountainglass.webp" alt="water glass" width="842" height="737" aria-hidden="true">
             </picture>
           <!--   <div class="cs-stat-box">
                 <span class="cs-stat">
@@ -146,7 +173,7 @@ eleventyNavigation:
         </div>
     </div>
     <!--Zen Leaf Group-->
-    <img class="cs-floater" decoding="async" src="/assets/images/water-removebg-preview.png" alt="hair tools" width="445" height="310">
+    <img class="cs-floater" decoding="async" src="/assets/images/water-removebg-preview.png" alt="splash of water" width="382.55" height="262.65">
 </section>
 
 <!-- ============================================ -->
@@ -559,7 +586,7 @@ eleventyNavigation:
            
             <li class="cs-item">
                 <div class="cs-top">
-                    <span class="cs-package">SimplyWater</span>
+                    <span class="cs-package">h2opure</span>
                     <span class="cs-price">$3,498</span>
                     <span class="cs-desc">($5,996 List Value)</span>
                     <picture class="cs-background">
@@ -575,7 +602,7 @@ eleventyNavigation:
                     The combo system includes
                     SimplyWater's H20Pure
                     premium water filtration and
-                    GlacierCuard fluoride and
+                    GlacierGuard fluoride and
                     heavy metal filtration leaving
                     you with simply pure water
                     from every faucet in your
@@ -639,7 +666,7 @@ eleventyNavigation:
             </li>
             <li class="cs-item cs-popular">
                 <div class="cs-top">
-                    <span class="cs-package">h20pure + glacierguard</span>
+                    <span class="cs-package">h2opure + glacierguard</span>
                     <span class="cs-price">$6,998</span>
                     <span class="cs-desc">($11,896 List Value)</span>
                     <picture class="cs-background">
@@ -720,7 +747,7 @@ eleventyNavigation:
             </li>
             <li class="cs-item">
                 <div class="cs-top">
-                    <span class="cs-package">h20pure + River of Life</span>
+                    <span class="cs-package">h2opure + River of Life</span>
                     <span class="cs-price">$4,498</span>
                     <span class="cs-desc">($7,696 List Value)</span>
                     <picture class="cs-background">
@@ -970,4 +997,5 @@ eleventyNavigation:
     </script>
 
    {% include 'components/cta.html' %}
+
  {% endblock %}
