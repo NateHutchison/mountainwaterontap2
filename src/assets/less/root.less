@@ -692,6 +692,8 @@
             list-style: none;
         }
 
+
+
         .cs-li-link {
             &.cs-drop-link {
                 /* 14px - 16px */
@@ -904,6 +906,13 @@
         .cs-li {
             list-style: none;
             padding: (32/16rem) 0;
+            /* prevent flexbox from squishing it */
+            flex: none;
+        }
+       #drop .cs-li, .cs-li-link {
+            list-style: none;
+            padding-left: 5px;
+            padding-bottom: 10px;
             /* prevent flexbox from squishing it */
             flex: none;
         }

@@ -762,6 +762,14 @@
     /* prevent flexbox from squishing it */
     flex: none;
   }
+  #cs-navigation #drop .cs-li,
+  #cs-navigation .cs-li-link {
+    list-style: none;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    /* prevent flexbox from squishing it */
+    flex: none;
+  }
   #cs-navigation .cs-li-link {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1vw, 1rem);
