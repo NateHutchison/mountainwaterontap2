@@ -143,6 +143,7 @@
 		font-family: 'Roboto', Arial, sans-serif;
 		color: var(--bodyTextColor);
 		overflow-x: hidden;
+        scroll-behavior: smooth;
 	}
 
 	*,
@@ -205,7 +206,7 @@
         border: none;
         font-size: large;
         min-width: 9.375rem;
-        padding: 14px 2rem;
+        padding: 5px 0rem;
         font-weight: 700;
    
         &:hover {
@@ -741,9 +742,9 @@
             box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 16px;
             border-bottom: 5px solid var(--primary);
             /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
-            // columns: 2;
+            columns: 2;
             position: absolute;
-            top: 100%;
+            top: 60%;
             z-index: -100;
             transform: scaleY(0);
             transform-origin: top;
@@ -796,9 +797,9 @@
                 white-space: nowrap;
                 width: 100%;
                 font-size: (16/16rem);
-                line-height: 1.5em;
+                line-height: 0.85em;
                 text-decoration: none;
-                padding: (12/16rem);
+                padding: (.75rem);
                 /* prevents padding from affecting height and width */
                 box-sizing: border-box;
                 color: var(--bodyTextColor);
@@ -911,8 +912,8 @@
         }
        #drop .cs-li, .cs-li-link {
             list-style: none;
-            padding-left: 5px;
-            padding-bottom: 10px;
+            padding-left: 0px;
+            padding-bottom: 5px;
             /* prevent flexbox from squishing it */
             flex: none;
         }

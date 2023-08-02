@@ -33,30 +33,32 @@ eleventyNavigation:
         }
     </script>
 
-    <!-- Include latest stable release of jQuery -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
-    <!-- Include the PayFrame JavaScript -->
-    <script type="text/javascript" src="https://api.payrix.com/payFrameScript"></script>
-    
-    <script>
-        PayFrame.config.apiKey = "b57d7185174957f97b1a4b66350d845b";
-        PayFrame.config.merchant = "p1_mer_5a285faf1b79148f3500b9e";
-        PayFrame.config.amount = 500;
-    
-                        
-        PayFrame.config.button = {
-                        parent: "parent-pay",
-                        value: "Purchase Now!",
-                        class: "my-pay"
-                      };
-    
-        PayFrame.config.color = "ac8856";
-        PayFrame.config.name = "Demo Name";
-        /* PayFrame.config.image = "https://d33wubrfki0l68.cloudfront.net/149f5adbed598149606035ef846a70218ea398e6/32fb5/assets/images/logo-blue.svg"; */
-        PayFrame.config.description = "This is a Demo";
-                      
-      </script>
+<!-- Include latest stable release of jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<!-- Include the PayFrame JavaScript -->
+<script type="text/javascript" src="https://api.payrix.com/payFrameScript"></script>
+
+<script>
+    // PayFrame configuration
+    PayFrame.config.apiKey = "b57d7185174957f97b1a4b66350d845b";
+    PayFrame.config.merchant = "p1_mer_5a285faf1b79148f3500b9e";
+    PayFrame.config.amount = 500;
+    PayFrame.config.button = {
+        parent: "parent-pay",
+        value: "Purchase Now!",
+        class: "cs-button-solid"
+    };
+    PayFrame.config.color = "ac8856";
+    PayFrame.config.name = "Demo Name";
+    PayFrame.config.description = "This is a Demo";
+
+    // Function to open the PayFrame when the custom-styled button is clicked
+    function openPayFrame() {
+        PayFrame.charge();
+    }
+</script>
 
 {% endblock %}
 
@@ -74,7 +76,8 @@ eleventyNavigation:
             <p class="cs-text">
                 Experience the pure power of premium water filtration with our restructured H2O systems for a healthier and revitalized you.
             </p>
-            <div id="parent-pay" class="button-tab"></div>
+            <a href="#h2opure" class="cs-button-solid" aria-label="learn more about us">Discover True H2O</a>
+            
            <!--  <a href="" class="cs-button-transparent">Our Services</a> -->
             <span class="cs-header">Trusted by:</span>
             <div class="cs-logo-group">
@@ -108,6 +111,7 @@ eleventyNavigation:
             </div> -->
         </div>
     </div>
+    <div id="h2opure"></div>
 </section>
                                          
 
@@ -168,8 +172,14 @@ eleventyNavigation:
                 us a call today!
             </p>
             
-     
-            <a href="/contact" class="cs-button-solid" aria-label="learn more about us">Purchase Now!</a>
+         
+<!-- Custom-styled Payrix button -->
+<div id="parent-pay" class="cs-button-solid" aria-label="learn more about us"></div>
+
+<!-- Hidden link element as a workaround -->
+<!-- <a href="#" class="cs-button-solid" style="display: none;">Purchase Now!</a> -->
+
+
         </div>
     </div>
     <!--Zen Leaf Group-->
@@ -843,7 +853,7 @@ eleventyNavigation:
                 <span class="cs-topper">News & Articles</span>
                 <h2 class="cs-title">Directly from The Latest News and Articles</h2>
             </div>
-            <a href="" class="cs-button-solid">View All</a>
+            <a href="/blog" class="cs-button-solid">View All</a>
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
@@ -863,7 +873,7 @@ eleventyNavigation:
                     <span class="cs-desc">
                         How pure water affects the growth of ones house plants and how to help them flourish in your home...
                     </span>
-                    <a href="" class="cs-link">Read More</a>
+                    <a href="/blog" class="cs-link">Read More</a>
                 </div>
             </li>
             <li class="cs-item">
@@ -883,7 +893,7 @@ eleventyNavigation:
                     <span class="cs-desc">
                         How to hydrate your pets without causing damage, and tips on maintaining a healthy diet for the...
                     </span>
-                    <a href="" class="cs-link">Read More</a>
+                    <a href="/blog" class="cs-link">Read More</a>
                 </div>
             </li>
             <li class="cs-item">
@@ -903,7 +913,7 @@ eleventyNavigation:
                     <span class="cs-desc">
                         How truly pure water can bring your coffee flavor to the next level, and tips on...
                     </span>
-                    <a href="" class="cs-link">Read More</a>
+                    <a href="/blog" class="cs-link">Read More</a>
                 </div>
             </li>
         </ul>
