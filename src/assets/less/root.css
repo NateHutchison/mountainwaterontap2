@@ -1148,17 +1148,42 @@
     font-weight: bold;
     position: relative;
   }
-  #footer .right-section .lists ul h2:before {
+  #footer .right-section .lists ul h2#info:before {
     content: '';
     position: absolute;
     display: block;
     height: 0.125rem;
-    width: 6.0625rem;
+    width: 7.75rem;
     background: var(--primary);
     opacity: 1;
     bottom: -1rem;
     left: 0;
   }
+
+  #footer .right-section .lists ul h2#products:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.125rem;
+    width: 6.25rem;
+    background: var(--primary);
+    opacity: 1;
+    bottom: -1rem;
+    left: 0;
+  }
+  
+  #footer .right-section .lists ul h2#contact:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.125rem;
+    width: 5.25rem;
+    background: var(--primary);
+    opacity: 1;
+    bottom: -1rem;
+    left: 0;
+  }
+  
   #footer .right-section .buttons {
     display: flex;
     justify-content: center;
