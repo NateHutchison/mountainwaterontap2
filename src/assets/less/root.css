@@ -1159,7 +1159,6 @@
     bottom: -1rem;
     left: 0;
   }
-
   #footer .right-section .lists ul h2#products:before {
     content: '';
     position: absolute;
@@ -1171,7 +1170,6 @@
     bottom: -1rem;
     left: 0;
   }
-  
   #footer .right-section .lists ul h2#contact:before {
     content: '';
     position: absolute;
@@ -1183,7 +1181,6 @@
     bottom: -1rem;
     left: 0;
   }
-  
   #footer .right-section .buttons {
     display: flex;
     justify-content: center;

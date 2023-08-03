@@ -1348,13 +1348,37 @@
 						text-transform: uppercase;
 						font-weight: bold;
 						position: relative;
-
-						&:before {
+                        
+                        &#info:before {
 							content: '';
 							position: absolute;
 							display: block;
 							height: (2/16rem);
-							width: (97/16rem);
+							width: (7.75rem);
+							background: var(--primary);
+							opacity: 1;
+							bottom: (-16/16rem);
+							left: 0;
+						}
+
+                        &#products:before {
+							content: '';
+							position: absolute;
+							display: block;
+							height: (2/16rem);
+							width: (6.25rem);
+							background: var(--primary);
+							opacity: 1;
+							bottom: (-16/16rem);
+							left: 0;
+						}
+
+						&#contact:before {
+							content: '';
+							position: absolute;
+							display: block;
+							height: (2/16rem);
+							width: (5.25rem);
 							background: var(--primary);
 							opacity: 1;
 							bottom: (-16/16rem);
