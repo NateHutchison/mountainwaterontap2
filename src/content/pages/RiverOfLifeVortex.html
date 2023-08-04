@@ -33,7 +33,7 @@ eleventyNavigation:
     <!--Background Image-->
     <picture class="cs-background" aria-hidden="true">
         <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/productwaterfall.webp">
+        <source media="(max-width: 600px)" srcset="/assets/images/productwaterfall-m.webp">
         <!--Tablet and above Image-->
         <source media="(min-width: 601px)" srcset="/assets/images/productwaterfall.webp">
         <img loading="lazy" decoding="async" src="/assets/images/productwaterfall.webp" alt="waterfall">
@@ -130,6 +130,22 @@ eleventyNavigation:
                 vital component for promoting better health, enhancing your living space, and caring for the
                 environment.</p><br>
 
+
+                <div class="image-gallery">
+                    <div class="gallery">
+                        <img loading="lazy" decoding="async" src="/assets/images/Vortex-Water-Revitalizer-Copper-Pipe.webp" alt="Image 1" onclick="openLightbox(this)">
+                        <img loading="lazy" decoding="async" src="/assets/images/vortex-installation.webp" alt="Image 2" onclick="openLightbox(this)">
+                        <img loading="lazy" decoding="async" src="/assets/images/mountainglass.webp" alt="Image 3" onclick="openLightbox(this)">
+                      </div>
+                      
+                      
+                      
+                      <div class="lightbox" id="lightbox">
+                        <span class="close" onclick="closeLightbox()">&times;</span>
+                        <img src="" alt="Large Image" class="lightbox-image">
+                      </div>
+                    </div><br><br>
+                
 
 
             <h3>SPECIFICATIONS</h3>
@@ -282,20 +298,6 @@ eleventyNavigation:
 
 
 
-<div class="image-gallery">
-    <div class="gallery">
-        <img src="/assets/images/Vortex-Water-Revitalizer-Copper-Pipe.webp" alt="Image 1" onclick="openLightbox(this)">
-        <img src="/assets/images/vortex-installation.webp" alt="Image 2" onclick="openLightbox(this)">
-        <img src="/assets/images/mountainglass.webp" alt="Image 3" onclick="openLightbox(this)">
-      </div>
-      
-      
-      
-      <div class="lightbox" id="lightbox">
-        <span class="close" onclick="closeLightbox()">&times;</span>
-        <img src="" alt="Large Image" class="lightbox-image">
-      </div>
-    </div>
 
 <script>
 document.addEventListener('click', function(event) {
