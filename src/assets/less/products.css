@@ -104,6 +104,7 @@
   display: inline-block;
   margin-bottom: 15px;
   text-decoration: none;
+  font-weight: bold;
 }
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
