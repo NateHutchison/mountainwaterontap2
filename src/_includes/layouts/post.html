@@ -3,6 +3,7 @@ preloadCSS: '/css/blog.css'
 eleventyComputed:
     title: '{{ title }}'
     description: '{{ description }}'
+    metaImage: '{{image}}'
     preloadImg: '{{ image }}'
     permalink: '/blog/{{ title | slug }}/index.html'
 ---
@@ -66,6 +67,7 @@ eleventyComputed:
                     {{ content | safe }}
                 </section>
             </article>
+            <!-- <div class="blog-header">Now go talk about it! -->
             <ul class="share-buttons">
             <!-- Sharingbutton Facebook -->
 <li><a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https://{{ client.domain }}{{ page.url }}" target="_blank" rel="noopener" aria-label="">
@@ -112,6 +114,7 @@ eleventyComputed:
   </a>
   </li>
 </ul>
+<!-- </div> -->
         </div>
         <!-- End .main-content -->
 

@@ -635,6 +635,7 @@
 }
 .share-buttons {
   display: flex;
+  list-style: none;
 }
 .resp-sharing-button__link,
 .resp-sharing-button__icon {
