@@ -633,6 +633,9 @@
     border-radius: 0.5rem;
   }
 }
+.share-buttons {
+  display: flex;
+}
 .resp-sharing-button__link,
 .resp-sharing-button__icon {
   display: inline-block;
