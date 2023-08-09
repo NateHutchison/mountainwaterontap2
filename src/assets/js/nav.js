@@ -80,7 +80,7 @@ const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropd
 			}
 		}
 		
-		new CS_MenuFilter()
+		/* new CS_MenuFilter()
 										
 
 		function openLightbox(image) {
@@ -96,6 +96,6 @@ const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropd
 			
 			lightbox.style.display = 'none';
 		  }
-
+ */
 		  
 		  
