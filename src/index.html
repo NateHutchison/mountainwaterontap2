@@ -34,31 +34,7 @@ eleventyNavigation:
     </script>
 
 
-<!-- Include latest stable release of jQuery -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
-<!-- Include the PayFrame JavaScript -->
-<script type="text/javascript" src="https://api.payrix.com/payFrameScript"></script>
-
-<script>
-    // PayFrame configuration
-    PayFrame.config.apiKey = "b57d7185174957f97b1a4b66350d845b";
-    PayFrame.config.merchant = "p1_mer_5a285faf1b79148f3500b9e";
-    PayFrame.config.amount = 500;
-    PayFrame.config.button = {
-        parent: "parent-pay",
-        value: "Purchase Now!",
-        class: "cs-button-solid"
-    };
-    PayFrame.config.color = "ac8856";
-    PayFrame.config.name = "Demo Name";
-    PayFrame.config.description = "This is a Demo";
-
-    // Function to open the PayFrame when the custom-styled button is clicked
-    function openPayFrame() {
-        PayFrame.charge();
-    }
-</script>
 
 {% endblock %}
 
@@ -93,7 +69,7 @@ eleventyNavigation:
         </div>
         <div class="cs-stat-group">
             <picture class="cs-background">
-                <source media="(max-width: 600px)" srcset="/assets/images/mountainglass.webp">
+                <source media="(max-width: 600px)" srcset="/assets/images/mountainglass-m.webp">
                 <source media="(min-width: 601px)" srcset="/assets/images/mountainglass.webp">
                 <img loading="lazy" decoding="async" src="/assets/images/mountainglass.webp" alt="water glass" width="842" height="737" aria-hidden="true">
             </picture>
@@ -143,7 +119,7 @@ eleventyNavigation:
             <!--Bottom right image-->
             <picture class="cs-picture cs-picture3">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/faucetsplash.webp">
+                <source media="(max-width: 600px)" srcset="/assets/images/faucetsplash-m.webp">
                 <!--Tablet and above Image-->
                 <source media="(min-width: 601px)" srcset="/assets/images/faucetsplash.webp">
                 <img loading="lazy" decoding="async" src="/assets/images/faucetsplash.webp" alt="water filter log" width="281" height="280">
@@ -174,7 +150,7 @@ eleventyNavigation:
             
          
 <!-- Custom-styled Payrix button -->
-<div id="parent-pay" class="cs-button-solid" aria-label="learn more about us"></div>
+<!-- <div id="parent-pay" class="cs-button-solid" aria-label="learn more about us"></div> -->
 
 <!-- Hidden link element as a workaround -->
 <!-- <a href="#" class="cs-button-solid" style="display: none;">Purchase Now!</a> -->
@@ -212,10 +188,10 @@ eleventyNavigation:
             <!--Bottom right image-->
             <picture class="cs-picture cs-picture3">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/h2opure.png">
+                <source media="(max-width: 600px)" srcset="/assets/images/h2opure.webp">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/h2opure.png">
-                <img loading="lazy" decoding="async" src="/assets/images/h2opure.png" alt="hair salon" width="281" height="280">
+                <source media="(min-width: 601px)" srcset="/assets/images/h2opure.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/h2opure.webp" alt="hair salon" width="281" height="280">
             </picture>
             <!--Seal-->
             <img class="cs-seal" loading="lazy" decoding="async" src="/assets/images/belgium-stamp.svg" alt="seal" width="150" height="150">
@@ -275,10 +251,10 @@ eleventyNavigation:
             <!--Bottom right image-->
             <picture class="cs-picture cs-picture3">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/h2opure.png">
+                <source media="(max-width: 600px)" srcset="/assets/images/h2opure.webp">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/h2opure.png">
-                <img loading="lazy" decoding="async" src="/assets/images/h2opure.png" alt="hair salon" width="281" height="280">
+                <source media="(min-width: 601px)" srcset="/assets/images/h2opure.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/h2opure.webp" alt="hair salon" width="281" height="280">
             </picture>
             <!--Seal-->
             <img class="cs-seal" loading="lazy" decoding="async" src="/assets/images/canada-stamp.svg" alt="seal" width="150" height="150">
