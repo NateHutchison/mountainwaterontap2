@@ -126,7 +126,7 @@
     /* 40px - 100px */
     margin: clamp(2.5rem, 5vw, 6.25rem) 0 0.75rem 0;
     width: 100%;
-    color: var(--bodyTextColor);
+    color: #fff;
     display: block;
   }
   #hero-408 .cs-logo-group {

@@ -6,7 +6,7 @@
 @media only screen and (min-width: 0em) {
   :root {
     /* remove this whole :root and put in your global css file that's shared on all pages, then just remove this section from all other Stitches you add later, only need this once in your global stylesheet */
-    --primary: #d4af37;
+    --primary: #886600;
     --primaryLight: #8c9f97;
     --secondary: #FFBA43;
     --secondaryLight: #FFBA43;
@@ -1295,26 +1295,9 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  :root {
-    /* remove this whole :root and put in your global css file that's shared on all pages, then just remove this section from all other Stitches you add later, only need this once in your global stylesheet */
-    --primary: #AC8856;
-    --primaryLight: #8c9f97;
-    --secondary: #FFBA43;
-    --secondaryLight: #FFBA43;
-    --headerColor: #1a1a1a;
-    --bodyTextColor: #4E4B66;
-    --bodyTextColorWhite: #FAFBFC;
-    /* 13px - 16px */
-    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
-    /* 31px - 49px */
-    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
-    --bodyFontSize: 1rem;
-    /* 60px - 100px top and bottom */
-    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-  }
   #blog-986 {
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: 'Roboto', 'Arial', sans-serif;
+    /* font-family: 'Roboto', 'Arial', sans-serif; */
     padding: var(--sectionPadding);
     background-color: #1a1a1a;
   }
