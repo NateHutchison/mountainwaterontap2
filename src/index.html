@@ -13,12 +13,11 @@ eleventyNavigation:
 
 {% block head %}
 <link rel="stylesheet" href="/css/critical.css">
-<link rel="stylesheet" href="/css/local.css"
-media="print" onload="this.media='all'; this.onload=null;">
-<noscript>
+<link rel="stylesheet" href="/css/local.css">
+<!-- <noscript>
     <link rel="stylesheet" href="/css/local.css">
 </noscript>
-
+ -->
     <!-- Script for Netlify Identity -->
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script defer>
@@ -75,7 +74,7 @@ media="print" onload="this.media='all'; this.onload=null;">
             <picture class="cs-background">
                 <source media="(max-width: 600px)" srcset="/assets/images/mountainglass-m.webp">
                 <source media="(min-width: 601px)" srcset="/assets/images/mountainglass.webp">
-                <img loading="eager" decoding="async" src="/assets/images/mountainglass.webp" alt="water glass" width="842" height="737" aria-hidden="true">
+                <img decoding="async" src="/assets/images/mountainglass.webp" alt="water glass" width="842" height="737" aria-hidden="true">
             </picture>
           <!--   <div class="cs-stat-box">
                 <span class="cs-stat">
