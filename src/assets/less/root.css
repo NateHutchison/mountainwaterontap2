@@ -27,7 +27,8 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 700;
-    color: var(--secondary);
+    font-size: large;
+    color: var(--primary);
     display: block;
   }
   .cs-title {
@@ -59,7 +60,7 @@
     position: relative;
     z-index: 1;
     background-color: var(--primary);
-    color: #000;
+    color: #fff;
     transition: color 0.3s;
     transition-delay: 0.1s;
   }
