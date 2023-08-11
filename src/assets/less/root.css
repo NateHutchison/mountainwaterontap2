@@ -6,7 +6,7 @@
 @media only screen and (min-width: 0em) {
   :root {
     /* remove this whole :root and put in your global css file that's shared on all pages, then just remove this section from all other Stitches you add later, only need this once in your global stylesheet */
-    --primary: #1972ad;
+    --primary: #197AC7;
     --primaryLight: #8c9f97;
     --secondary: #FFBA43;
     --secondaryLight: #FFBA43;
