@@ -26,3 +26,16 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Image Caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+
+  - name: "testimonial"
+    label: "Testimonials"
+    label_singular: "Testimonial"
+    folder: "src/content/testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tags", name: "tags", widget: "hidden", default: ["testimonial"] }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { cite: "Cite", name: "cite", widget: "string" }
