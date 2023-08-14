@@ -230,7 +230,7 @@ eleventyNavigation:
                     
                     </div>
                         
-
+                    {%- for testimonial in collections.testimonial | reverse -%} {{ testimonial.data.title }} {{ testimonial.data.description }} {{ testimonial.data.cite }} {%- endfor -%}
 
 
             </div>
